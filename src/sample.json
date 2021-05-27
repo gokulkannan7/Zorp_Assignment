@@ -1,0 +1,48 @@
+[
+    {
+        "fields": [
+            {
+                "id": "taskId",
+                "type": "integer",
+                "label": "Task Id"
+            },
+            {
+                "id": "taskType",
+                "type": "choice",
+                "options": [
+                    "delivery",
+                    "home service",
+                    "collection"
+                ],
+                "label": "Task type"
+            },
+            {
+                "id": "userName",
+                "type": "string",
+                "label": "User name"
+            },
+            {
+                "id": "products",
+                "type": "list",
+                "label": "Products",
+                "details": [
+                    {
+                        "id": "productId",
+                        "type": "string",
+                        "label": "Product id"
+                    },
+                    {
+                        "id": "productName",
+                        "type": "string",
+                        "label": "Product Name"
+                    },
+                    {
+                        "id": "quantity",
+                        "type": "integer",
+                        "label": "Quantity"
+                    }
+                ]
+            }
+        ]
+    }
+]
