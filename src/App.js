@@ -7,9 +7,9 @@ import Elements from './components/Elements'
 function App() {
   const [elements, setElements] = useState(null)
   useEffect(() => {
-    setElements(sampleJSON[0])
+    setElements(sampleJSON[0])           // To set the elements to the object in sample.json
   }, [])
-  const { fields } = elements ?? {}
+  const { fields } = elements ?? {}      // Destructure the object iff it is not null 
   return (
     <div className="container">
       <form>
